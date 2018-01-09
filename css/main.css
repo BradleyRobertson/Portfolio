@@ -2,53 +2,6 @@
 
 /*li8ghtbox start */
 
-.image-holder {
-	width: 153px;
-	height: 422px;
-	background: url(../images/fourSeasons.jpg) no-repeat;
-	display: inline-block;
-	margin: 0;
-	border: 0;
-	padding: 0;
-	cursor: pointer;
-	transition: opacity 0.3s ease;
-}
-
-.image-holder:hover {
-	opacity: 0.3;
-}
-
-#summer { background-position: -146px 0; }
-#autumn { background-position: -293px 0; }
-#winter { background-position: -438px 0; }
-
-.spring { color: #6ebd1a; }
-.summer { color: #f8a40a; }
-.autumn { color: #930d03; }
-.winter { color: #02c5e5; }
-
-.main-copy { background-color: #FFF; font-size: 1.5em; }
-.main-copy h2 {
-	text-transform: capitalize;
-	text-align: left;
-	padding-left: 20px;
-	padding-top: 20px;
-	margin: 0; b
-	order:0px;
-}
-
-.main-copy p {
-	color: gray;
-	padding: 0 20px;
-	font-size: 0.8em;
-	line-height: 1.5em;
-	padding-bottom: 20px;
-}
-
-.subImagesContainer { padding: 0; }
-
-.thumb { height: 90px; margin: 8px; cursor: pointer; }
-
 /* lightbox end */
 
 a:hover {
@@ -80,23 +33,22 @@ a{
   color: white;
 }
 
-#NavBar
-{
-
-}
-
 .AboutMeImage
 {
   margin-top: 15px;
   margin-bottom: 15px;
+  border-radius: 20px;
 }
 
 .AboutSection
 {
-background-color: rgba(0, 0, 0, 0.5);
-color: white;
+background-color: rgba(255, 255, 255, 0.8);
+color: black;
 margin-top: 25px;
 margin-bottom: 25px;
+height: 100%;
+border-radius: 15px;
+overflow: hidden;
 }
 
 .AboutHeader
@@ -141,12 +93,14 @@ overflow: hidden;
   border-radius: 20px;
   margin-top: 15px;
   margin-bottom: 15px;
+  overflow: hidden;
 }
 
 .prevworkimg
 {
-  border-radius: 5px;
+  border-radius: 8px;
   margin-top: 20px;
+  overflow: hidden;
 }
 
 .previousheader
@@ -247,9 +201,9 @@ overflow: hidden;
   box-shadow: 0 8px 20px 0 rgba(255, 255, 255, 0.8), 0 8px 20px 0 rgba(255, 255, 255, 0.8);
 }
 
-.logoimage
+#logoimage
 {
-  background-color: black;
+  padding: 0px;
   margin-top: 20px;
   box-shadow: 0 8px 20px 0 rgba(255, 255, 255, 0.8), 0 8px 20px 0 rgba(255, 255, 255, 0.8);
 }
@@ -272,16 +226,18 @@ overflow: hidden;
   margin-bottom: 10px;
 }
 
-.inputs
-{
-  text-align:center;
-}
-
 .paragraph
 {
-  font-size: 17px;
+  font-size: 23px;
   font-family: Fira-sans;
   text-align: center;
+}
+
+.Aboutparagraph{
+  font-size: 20px;
+  font-family: Fira-sans;
+  text-align: center;
+  margin-top: 20px;
 }
 
 .SocialLinks
@@ -290,16 +246,65 @@ overflow: hidden;
   margin-bottom: 30px;
 }
 
-@media screen and (Min-width: 768px) {
+.contactinput{
+  background-color: grey;
+  color: white;
+}
+
+button{
+  text-align: center;
+  font-size: 20px;
+}
+
+@media screen and (Min-width: 1024px) {
     .SocialLinks {
       width: 7%;
     }
     .inputs {
-      margin-top: -225px;
+      margin-top: -28%;
     }
     .FooterTexts {
       font-size: 25px;
       font-family: Fira-sans;
       margin-top: 35px;
+    }
+    .contactinput{
+      margin-top: 25px;
+      margin-bottom: 20px;
+    }
+    .prevwork {
+          height: 400px;
+    }
+}
+
+@media screen and (Max-width: 1023px) {
+    .PromoHeaders {
+      font-size: 30px;
+    }
+    .NavOptions
+    {
+      color: #ffffff;
+      list-style-type: none;
+      font-family: Quicksand;
+      font-size: 25px;
+      margin-top: 35px;
+      margin-bottom: 20px;
+    }
+    a {
+        background-color: rgba(255, 255, 255, 0.1);
+        transition: 0.5s;
+        color: white;
+    }
+
+    a:hover {
+        background-color: rgba(255, 255, 255, 0.5);
+        transition: 0.5s;
+        color: white;
+    }
+
+    #NavBar
+    {
+      background-color: black;
+      color: white;
     }
 }
