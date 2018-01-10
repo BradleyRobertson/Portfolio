@@ -80,6 +80,64 @@ if(isset($_POST['submit'])){
 
 	<!--Previous work section content-->
 <section id="Previousworks" class-"Previousworks row">
+	<!-- -->
+	<div class="row">
+  <div class="column">
+    <img src="img/lightbox_images/beer-logo.jpg" onclick="openModal();currentSlide(1)" class="hover-shadow">
+  </div>
+  <div class="column">
+    <img src="img/lightbox_images/crunican-logo.jpg" onclick="openModal();currentSlide(2)" class="hover-shadow">
+  </div>
+  <div class="column">
+    <img src="img/lightbox_images/car_logo.jpg" onclick="openModal();currentSlide(3)" class="hover-shadow">
+  </div>
+</div>
+
+<!-- The Modal/Lightbox -->
+<div id="myModal" class="modal">
+  <span class="close cursor" onclick="closeModal()">&times;</span>
+  <div class="modal-content">
+
+    <div class="mySlides">
+      <div class="numbertext">1 / 3</div>
+      <img src="img/lightbox_images/beer-bottles.png" style="width:100%" alt="image1">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">2 / 3</div>
+      <img src="img/lightbox_images/crunican.png" style="width:100%" alt="image2">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">3 / 3</div>
+      <img src="video/car_video" style="width:100%" alt="image3">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">4 / 4</div>
+      <img class="demo" src="img/lightbox_images/img_lights_wide.jpg" style="width:100%" alt="This was an assignment I was given in one of my classes. We had to create a mashup of the beer bottle label and the iconic brand to create a new and unique beer product. The brand I choose was 501 Vintage by Levis Jeans. I wanted the label to represent Levis Jeans as much as possible, so I made the background a jean texture, and made the whole shape as the back of one of their jeans. The red strip symbolized the Levis strip at the back of their jeans. I then added a stitching  effect to the jean outline. The top label was to add more information on their company, and I added more stitching around that as well.">
+    </div>
+
+    <!-- Caption text -->
+    <div class="caption-container">
+      <p id="caption"></p>
+    </div>
+
+    <!-- Thumbnail image controls -->
+    <div class="column">
+      <img class="demo" src="img/lightbox_images/beer-logo.jpg" onclick="currentSlide(1)" alt="This website was a rejuvenate and reboot an apple picking farm’s website, Crunican Orchards. I decided to start with their logo, making it a simple yet effective. I styled the name, and decided to put an apple on top so people would refer to their apple-picking company. With their website, I tried my best to use the colour red as much as possible, since people refer the colour red too apples. The colour scheme I choose was red and white. Their background was a wood texture, since their wooden store is in most of their photos and popular.">
+    </div>
+
+    <div class="column">
+      <img class="demo" src="img/lightbox_images/crunican-logo.jpg" onclick="currentSlide(2)" alt="Trolltunga">
+    </div>
+
+    <div class="column">
+      <img class="demo" src="img/lightbox_images/car_logo.jpg" onclick="currentSlide(3)" alt="Mountains">
+    </div>
+  </div>
+</div>
+	<!-- -->
 	<h2 class="hide" id="PreviousNav2"> Prevous works </h2>
 	<h3 class="previousmainheader large-offset-2 small-8 small-offset-2 columns"> My Previous Works </h3>
 	<div class="prevwork large-2 large-offset-1 small-8 small-offset-2 columns">
