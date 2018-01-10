@@ -15,7 +15,10 @@ function submitMessage($name, $message, $email, $subject, $direct){
   $formatTo = $email . " has sent you an email \n\n" . $name . " is their name \n\n" . $message;
   $confirm = " Copy of the message: ". $email . " has sent you an email \n\n" . $name . " is their name \n\n";
 
+  mail($youremail,$subject,$formatTo,$header);
+
+
   $direct = $direct."?name={name}";
-  redirect_to{$direct};
+  redirect_to($direct);
 }
  ?>
