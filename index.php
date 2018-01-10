@@ -154,7 +154,7 @@ usually 1 -2 business days </p>
 <input name="subject" id="Subject" class="contactinput large-8 large-offset-0 small-8 small-offset-2 columns" placeholder="Subject"></input>
 <input name="robot" class="hide"></input>
 <textarea name="message" id="Message" class="contactinput large-10 large-offset-0 small-8 small-offset-2 columns" placeholder="Leave your message here"></textarea>
-<button id="Send" class="contactinput large-2 large-offset-4 large-pull-10 small-pull-2 small-2 small-offset-5 small-pull-5 columns"> Send </button>
+<button name ="submit" id="Send" class="contactinput large-2 large-offset-4 large-pull-10 small-pull-2 small-2 small-offset-5 small-pull-5 columns"> Send </button>
 </div>
 </div>
 </section>

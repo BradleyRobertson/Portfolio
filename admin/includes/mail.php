@@ -7,7 +7,6 @@ function redirect_to($location){
   }
 }
 
-echo "Mail echo";
 function submitMessage($name, $message, $email, $subject, $direct){
   $header = "From: " . $email;
   $header2 = "From: " . $youremail;
