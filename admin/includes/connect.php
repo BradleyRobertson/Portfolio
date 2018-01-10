@@ -1,15 +1,18 @@
 <?php
 
 
-$db_name = "db_portfolio";
-$db_user = "root";
-$db_pass = "";
-$db_server = "localhost";
+$user = "root";
+$pass = "";
+$server = "localhost";
+$db = "db_portfolio";
 
-$connect = new mysqli($db_name, $db_user, $db_server);
 
-if ($connect->conect_error){
-  die("Connection failed: ")
+$conn = mysqli($pass, $user, $server, $db);
+
+$link = mysqli_connect($pass, $user, $server, $db)
+
+if(mysqli_connect_error()){
+  printf("Connection failed: %s\n", mysqli_connect_error());
 
   exit();
 }
