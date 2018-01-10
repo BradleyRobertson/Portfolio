@@ -8,7 +8,9 @@ $db_server = "localhost";
 
 $connect = new mysqli($db_name, $db_user, $db_server);
 
-if ($connect->coonect_error){
+if ($connect->conect_error){
   die("Connection failed: ")
+
+  exit();
 }
 ?>

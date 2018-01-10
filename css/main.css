@@ -247,8 +247,22 @@ overflow: hidden;
 }
 
 .contactinput{
-  background-color: grey;
-  color: white;
+  background-color: rgba(168, 168, 168, 1);
+  color: black;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+input::placeholder {
+  color: black;
+  font-family: Arial;
+    font-size: 18px;
+}
+
+textarea::placeholder {
+  color: black;
+  font-family: Arial;
+  font-size: 18px;
 }
 
 button{
