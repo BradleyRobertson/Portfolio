@@ -13,8 +13,7 @@ if(isset($_POST['submit'])){
 
 	if($robot == ""){
 		$mail = submitMessage($name, $message, $email, $subject, $direct);
-	}
-	else{
+}else{
 	  die("Robot Detected");
 	  exit();
 	}
