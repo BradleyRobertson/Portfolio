@@ -1,24 +1,21 @@
-//lightbox star //
+//lightbox start//
 $(document).foundation()
-// Open the Modal
+
 function openLightbox() {
-  document.getElementById('myModal').style.display = "block";
+  document.getElementById('lghtboxer').style.display = "block";
 }
 
-// Close the Modal
 function closeLightbox() {
-  document.getElementById('myModal').style.display = "none";
+  document.getElementById('lghtboxer').style.display = "none";
 }
 
 var slideIndex = 1;
 showSlides(slideIndex);
 
-// Next/previous controls
 function plusSlides(n) {
   showSlides(slideIndex += n);
 }
 
-// Thumbnail image controls
 function currentSlide(n) {
   showSlides(slideIndex = n);
 }
@@ -37,7 +34,6 @@ function showSlides(n) {
 //lightboxes end //
 // scrollto thingo//
 
-
   var HomeSection = document.querySelector("#HomeNav"),
       PreviousSection = document.querySelector("#PreviousNav"),
       AboutSection = document.querySelector("#AboutNav"),
@@ -53,7 +49,7 @@ function showSlides(n) {
 
 function HomeSectionNav() {
   //console.log("from Home Section Nav");
-  TweenMax.to(window, 2, {ScrollTo:"#HomeNav2"});
+  TweenMax.to(window, 1, {scrollTo:"#Home"});
   //console.log("working1");
 }
 
@@ -63,11 +59,11 @@ function PreviousSectionNav() {
 }
 
 function AboutSectionNav() {
-  TweenMax.to(window, 2, {scrollTo:"#AboutNav2"});
+  TweenMax.to(window, 3, {scrollTo:"#About"});
     //console.log("working3");
 }
 
 function ContactSectionNav() {
-  TweenMax.to(window, 2, {scrollTo:"#ContactNav2"});
+  TweenMax.to(window, 4, {scrollTo:"#Contact"});
     //console.log("working4");
 }

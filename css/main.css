@@ -2,12 +2,6 @@
 
 /*li8ghtbox start */
 
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
 .lightboximageholder {
   display: none;
   position: fixed;
@@ -20,8 +14,7 @@
   background-color: rgba(0, 0, 0, 0.5);
 }
 
-
-.modal-content {
+.lghtboxContents {
   position: relative;
   background-color: #fefefe;
   margin: auto;
@@ -44,7 +37,6 @@
   display: none;
 }
 
-}
 /* lightbox end */
 
 a:hover {
@@ -319,6 +311,11 @@ button{
     }
     .inputs {
       margin-top: -28%;
+    }
+    a:hover {
+        background-color: rgba(0, 0, 0, 0.08);
+        transition: 0.5s;
+        color: black;
     }
     .FooterTexts {
       font-size: 25px;
