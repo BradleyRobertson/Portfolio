@@ -39,15 +39,13 @@ if(isset($_POST['submit'])){
          <h1 class="hide"> Brad Robertson </h1>
 
          <!-- Navigation Bar-->
-         <header id="Navigation">
-             <h2 class="hide"> Navigation </h2>
              <nav id="NavBar" class="row large-12 hide-for small">
+							 <h2 class="hide"> Navigation </h2>
                  <a class="NavOptions large-offset-0 large-3 columns small-10 small-offset-1" id="HomeNav" href="#HomeNav2"> Home </a>
                  <a class="NavOptions large-3 large-offset-0 columns small-10 small-offset-1" id="PreviousNav" href="#PreviousNav2"> Previous Works </a>
                  <a class="NavOptions large-offset-0 large-3 columns small-10 small-offset-1" id="AboutNav" href="#AboutNav2"> About </a>
                  <a class="NavOptions large-3 large-pull-0 columns small-10 small-pull-1" id="ContactNav" href="#ContactNav2"> Contact Me  </a>
              </nav>
-         </header>
          <div class="seperator" id="seperation">
          </div>
          <!-- Navigation Bar end-->
@@ -168,7 +166,7 @@ if(isset($_POST['submit'])){
 
          <!--About section page content-->
          <section id="About" class="AboutMe">
-             <h2 class="hide"> about section </h2>
+             <h2 class="hide"> About section </h2>
              <div class="AboutSection large-10 small-offset-1 small-10 row">
                  <img src="images/aboutmeimage.png" class="AboutMeImage large-pull-1 large-4 small-8 small-offset-2 columns">
                  <div class="large-12 small-12">
@@ -187,7 +185,7 @@ if(isset($_POST['submit'])){
              <div class="ContactMe large-10 large-offset-1 small-10 small-offset-1 row">
                  <h3 class="contactheader large-3 large-offset-1 small-10 small-offset-1 columns"> Contact Me </h3>
                  <p class="paragraph large-3 large-offset-6 large-pull-5 columns"> If you’d like to Contact me for details about what i do or about any work related inquiries, You can contact me through the form provided and I’ll get back to you in usually 1 -2 business days </p>
-								 <div class="inputs large-6 columns">
+                 <div class="inputs large-6 columns">
                      <input name="name" required id="Name" class="contactinput large-8 large-offset-0 small-8 small-offset-2 columns" placeholder="Name"> </input>
                      <input name="email" required id="Email" class="contactinput large-8 large-offset-0 small-8 small-offset-2 columns" placeholder="Email"></input>
                      <input name="subject" required id="Subject" class="contactinput large-8 large-offset-0 small-8 small-offset-2 columns" placeholder="Subject"></input>
