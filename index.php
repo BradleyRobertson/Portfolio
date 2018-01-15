@@ -8,11 +8,11 @@ if(isset($_POST['submit'])){
 	$name = $_POST['name'];
 	$email = $_POST['email'];
 	$subject = $_POST['subject'];
+	$message = $_POST['message'];
 	$robot = $_POST['robot'];
-	$direct = "thankyou.php";
 
 	if($robot == ""){
-		$mail = submitMessage($name, $message, $email, $subject, $direct);
+		$mail = submitMessage($name, $email, $subject, $message);
 }else{
 	  die("Robot Detected");
 	  exit();
