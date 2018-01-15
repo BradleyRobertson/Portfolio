@@ -3,13 +3,13 @@ ini_set('display_errors', 1);
 error_reporting(E_ALL);
 require_once("admin/includes/config.php");
 
-if(isset($_POST['submit'])){
+if(isset($_POST['Submit'])){
 
-	$name = $_POST['name'];
-	$email = $_POST['email'];
-	$subject = $_POST['subject'];
-	$message = $_POST['message'];
-	$robot = $_POST['robot'];
+	$name = $_POST['Name'];
+	$email = $_POST['Email'];
+	$subject = $_POST['Subject'];
+	$message = $_POST['Message'];
+	$robot = $_POST['Robot'];
 
 	if($robot == ""){
 		$mail = submitMessage($name, $email, $subject, $message);
@@ -180,21 +180,23 @@ if(isset($_POST['submit'])){
          <!--About section content end-->
 
          <!--Contact section content -->
-         <section id="Contact" class="contact large-12 small-12">
-             <h2 class="hide"> Contact info </h2>
-             <div class="ContactMe large-10 large-offset-1 small-10 small-offset-1 row">
-                 <h3 class="contactheader large-3 large-offset-1 small-10 small-offset-1 columns"> Contact Me </h3>
-                 <p class="paragraph large-3 large-offset-6 large-pull-5 columns"> If you’d like to Contact me for details about what i do or about any work related inquiries, You can contact me through the form provided and I’ll get back to you in usually 1 -2 business days </p>
-                 <div class="inputs large-6 columns">
-                     <input name="name" required id="Name" class="contactinput large-8 large-offset-0 small-8 small-offset-2 columns" placeholder="Name"> </input>
-                     <input name="email" required id="Email" class="contactinput large-8 large-offset-0 small-8 small-offset-2 columns" placeholder="Email"></input>
-                     <input name="subject" required id="Subject" class="contactinput large-8 large-offset-0 small-8 small-offset-2 columns" placeholder="Subject"></input>
-                     <input name="robot" class="hide"></input>
-                     <textarea name="message" required id="Message" class="contactinput large-10 large-offset-0 small-8 small-offset-2 columns" placeholder="Leave your message here"></textarea>
-                     <button id="Send" class="contactinput large-2 large-offset-4 large-pull-10 small-pull-2 small-2 small-offset-5 small-pull-5 columns"> Send </button>
-                 </div>
-             </div>
-         </section>
+				 <section id="Contact" class="contact large-12 small-12">
+						 <h2 class="hide"> Contact info </h2>
+						 <div class="ContactMe large-10 large-offset-1 small-10 small-offset-1 row">
+								 <h3 class="contactheader large-3 large-offset-1 small-10 small-offset-1 columns"> Contact Me </h3>
+								 <p class="paragraph large-3 large-offset-6 large-pull-5 columns"> If you’d like to Contact me for details about what i do or about any work related inquiries, You can contact me through the form provided and I’ll get back to you in usually 1 -2 business days </p>
+								 <div class="inputs large-6 columns">
+									 <form action="index.php" method="post">
+										 <input name="name" required id="Name" type="text" class="contactinput large-8 large-offset-0 small-8 small-offset-2 columns" placeholder="Name"> </input>
+										 <input name="email" required id="Email" type="email" class="contactinput large-8 large-offset-0 small-8 small-offset-2 columns" placeholder="Email"></input>
+										 <input name="subject" required id="Subject" type="text" class="contactinput large-8 large-offset-0 small-8 small-offset-2 columns" placeholder="Subject"></input>
+										 <input name="robot" id="Robot" type="hidden" class="hide"></input>
+										 <textarea name="message" required id="Message" type="text" class="contactinput large-10 large-offset-0 small-8 small-offset-2 columns" placeholder="Leave your message here"></textarea>
+										 <button name="Submit" id="Send" type="submit" class="contactinput large-2 large-offset-4 large-pull-10 small-pull-2 small-2 small-offset-5 small-pull-5 columns" data-submit="...Sending"> Send </button>
+									 </form>
+								 </div>
+						 </div>
+				 </section>
          <!--Contact section end -->
 
          <!--Footer content-->
