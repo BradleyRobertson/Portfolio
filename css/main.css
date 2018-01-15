@@ -40,6 +40,10 @@
 
 /* lightbox end */
 
+button{
+    cursor: pointer;
+}
+
 a:hover {
     background-color: rgba(0, 0, 0, 0.08);
     transition: 0.5s;
